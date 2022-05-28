@@ -1,0 +1,53 @@
+.container {
+  @apply
+    flex
+    w-4/5
+    h-full
+    p-20
+    flex-col;
+}
+
+.date {
+  @apply
+    flex
+    h-11
+    text-sm
+    text-gray-500
+    mb-4
+    items-center;
+}
+
+.navigation {
+  @apply
+    flex
+    relative
+    w-full
+    border-b
+    border-gray-500;
+
+  button {
+    @apply
+      py-4
+      px-6
+      font-medium
+      text-gray-500
+      capitalize
+      transition-all;
+    
+      &.active {
+        @apply
+          text-white;
+      }
+  }
+}
+
+.navigation--bar {
+  @apply
+    absolute
+    bottom-0
+    h-0.5
+    bg-gradient-to-r 
+    from-indigo-500 
+    to-purple-500
+    transition-all;
+}
